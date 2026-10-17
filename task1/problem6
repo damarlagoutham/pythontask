@@ -1,0 +1,7 @@
+#Introduction to Sets
+def average(array):
+    a=list(set(array))
+    b=sorted(a)
+    avg=sum(b)/len(a)
+    return avg
+if __name__ == '__main__':
