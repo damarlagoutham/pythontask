@@ -1,0 +1,10 @@
+#7 Symmetric Difference
+m=int(input())
+m_set=set(map(int,input().split()))
+m=int(input())
+n_set=set(map(int,input().split()))
+m_diff_n=m_set.difference(n_set)
+n_diff_m=n_set.difference(m_set)
+result=list(m_diff_n)+list(n_diff_m)
+sorted_result=sorted(result)
+print(*sorted_result,sep="\n")
