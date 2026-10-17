@@ -1,0 +1,17 @@
+#13 Nested Lists
+if __name__ == '__main__':
+    student=[]
+    s=[]
+    n=[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        student.append([name,score])
+        s.append(score)
+        n.append(name)
+    sl=list(set(s))
+    s_w=sorted(sl)
+    se_w=s_w[1]
+    o=[i[0] for i in student if i[1]==se_w]
+    for i in sorted(o):
+        print(i)
