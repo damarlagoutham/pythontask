@@ -1,0 +1,8 @@
+#8 Set .add()
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a=eval(input())
+countries=set()
+for i in range(a):
+    country=input()
+    countries.add(country)
+print(len(countries))
