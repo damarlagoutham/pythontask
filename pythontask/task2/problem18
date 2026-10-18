@@ -1,0 +1,9 @@
+#18 Set Mutations
+
+input()
+set_1=set(map(int,input().split()))
+for i in range(int(input())):
+    cmd=input().split()[0]
+    set_n=set(map(int,input().split()))
+    getattr(set_1,cmd)(set_n)
+print(sum(set_1))
