@@ -1,0 +1,8 @@
+#17 Check Strict Superset
+
+set_a=set(input().split())
+superset=True
+for _ in range(int(input())):
+    if not set_a.issuperset(input().split()):
+        superset=False
+print(superset)
