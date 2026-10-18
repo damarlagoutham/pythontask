@@ -1,0 +1,10 @@
+#16 Check Subset
+
+t=int(input())
+for i in range(t):
+    a_e=int(input())
+    a_set=set(map(int,input().split()))
+    b_e=int(input())
+    b_set=set(map(int,input().split()))
+    print(a_set<=b_set)
+    
