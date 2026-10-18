@@ -1,0 +1,12 @@
+#10 Designer Door Mat
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m=map(int,input().split())
+for i in range(int((n-1)/2)):
+    pack=".|."
+    text=((i*2)+1)*pack
+    print(text.center(m,"-"))
+print("WELCOME".center(m,"-"))
+for i in reversed(range(int((n-1)/2))):
+    pack=".|."
+    text=((i*2)+1)*pack
+    print(text.center(m,"-"))
