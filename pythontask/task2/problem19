@@ -1,0 +1,8 @@
+#19 Company Logo
+
+
+if __name__ == '__main__':
+    s = input()
+    r=Counter(sorted(s)).most_common(3)
+    for k,v in r:
+        print(k,v)
